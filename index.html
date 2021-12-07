@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <input type="button" id="lightBox_On" onclick="turnLightsOn()" value="Lights On" > <label for=lightBox> 
+    </label>
+
+
+    <input type="button" id="lightBox_Off" onclick="turnLightsOff()" value="Lights Off""> <label for=lightBox> 
+    </label> <br> <br>  
+
+
+    <img src="12.PNG" alt="starting_image" class="center"> <br> 
+
+    <input type="checkbox" id="arabic_checkbox" value="1" Checked onclick="arabic_function()"> <label for=Checkbox> Arabic 
+    </label> <br> 
+
+    <input type="checkbox" id="ayat_number" value="1" Checked onclick="ayat_number_function()"> <label for=Checkbox> Ayat Number
+    </label> <br>
+
+    <input type="checkbox" id="surah_Reference" value="1" Checked onclick="surahReference()"> <label for=Checkbox> Surah Reference 
+    </label> <br>
+
+    <input type="checkbox" id="bangla_meaning_checkbox" value="1" Checked onclick="bangla_meaning_function()"> <label for=Checkbox>Bangla Meaning 
+    </label> <br>
+
+    <input type="checkbox" id="bangla_pronouciation_checkbox" value="1" Checked onclick="bangla_pronounciation_function()">
+    <label for=Checkbox>Bangla Prounciation </label> <br>
+
+    <br>
+
+    <hr>
+  
+<br>
+
+    <img src="0.PNG" alt="starting_image" class="center"> 
+    <br>
+
+    <p>বিসমিল্লাহির রাহমা-নির রাহি-ম</p> <br>
+    <hr> 
+    <br>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+        <! --- Surah Al-Fatiha --->
+            <div class="heading">
+                <h1 class="heading">Surah Al-Fatiha</h1>
+            </div> <br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Fatiha [1.1]</h2>
+<h2 id="arabic" class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 1</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">বিসমিল্লাহির রাহমা-নির রাহি-ম</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">পরম দয়ালু, সবসময় দয়ালু আল্লাহ্‌র নামে [শুরু করছি]।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Fatiha [1.2]</h2>
+<h2 id="arabic" class="arabic"> الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 2</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">আলহামদু লিল্লাহি রাব্বিল আ’-লামি-ন।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">সকল প্রশংসা, মহিমা এবং ধন্যবাদ আল্লাহর; তিনি সকল চেতন অস্তিত্বের সার্বভৌম
+    ক্ষমতার অধিকারী, যত্নশীল প্রভু।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Fatiha [1.3]</h2>
+<h2 id="arabic" class="arabic"> الرَّحْمَٰنِ الرَّحِيمِ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 3</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">আররাহমা-নির রাহি-ম</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">পরম দয়ালু, সবসময় দয়ালু</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Fatiha [1.4]</h2>
+<h2 id="arabic" class="arabic"> مَالِكِ يَوْمِ الدِّينِ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 4</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">মা-লিকি ইয়াওমিদ্দি-ন</h1>
+<h1 id="banglaMeaning" class="banglaMeaning"> বিচার দিনের একমাত্র অধিপতি।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Fatiha [1.5]</h2>
+<h2 id="arabic" class="arabic"> إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 5</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ইয়্যা-কা না’বুদু ওয়া ইয়্যা-কা নাসতাই’-ন</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">আমরা একমাত্র আপনার, শুধুই আপনার দাসত্ব করি, এবং একমাত্র আপনার কাছে, শুধুই
+    আপনার কাছে অনেক চেষ্টার পরে সাহায্য চাই।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Fatiha [1.6]</h2>
+<h2 id="arabic" class="arabic"> اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 6</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ইহদিনাস সিরাতা’ল মুসতাকি’-ম</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">আমাদেরকে একমাত্র সঠিক, প্রতিষ্ঠিত, ঊর্ধ্বগামী, ক্রমাগত কঠিনতর পথের জন্য
+    বিস্তারিত পথনির্দেশ দিন।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Fatiha [1.7]</h2>
+<h2 id="arabic" class="arabic">
+     صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 7</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">সিরাতা’ল্লা যি-না আনআ’মতা আ’লাইহিম গা’ইরিল মাগ’দু’বি আ’লাইহিম
+    ওয়ালা দ্দ—ল্লি-ন।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">তাদের পথ যাদেরকে আপনি স্বাচ্ছন্দ্য, অনুগ্রহ, কল্যাণ দিয়েছেন, যারা নিজের
+    এবং অন্যের ক্রোধের শিকার হয় না এবং ভুল পথে যায় না। সংকলন, অনুবাদ ও সম্পাদনা : মাওলানা মিরাজ রহমান</h1>
+<br>
+<br>
+
+        <! --- Surah Al-Baqarah --->
+            <div class="heading">
+                <h1 class="heading">Surah Al-Baqarah</h1>
+            </div> <br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Baqarah [2:1]</h2>
+<h2 id="arabic" class="arabic">الم</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 8</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">আলিফ লাম মীম।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">আলিফ-লাম-মীম।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Baqarah [2:2]</h2>
+<h2 id="arabic" class="arabic">ذَلِكَ الْكِتَابُ لَا رَيْبَ فِيهِ هُدًى لِلْمُتَّقِينَ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 9</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">যালিকাল কিতাবু লারাইবা ফিহি হুদাল্লিল মুত্তাক্বিন।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">এটি (আল্লাহর) কিতাব (পবিত্র কুরআন), এতে কোনো সন্দেহ নেই, (এই কিতাব)
+    মুত্তাকিদের জন্য হিদায়াত।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Baqarah [2:3]</h2>
+<h2 id="arabic" class="arabic">
+    الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنْفِقُونَ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 10</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">আল্লাযীনা ইউমিনুনা বিল গাইবি ওয়া ইউকিমুনাস্ সালাতা ওয়া মিম্মা
+    রাযাকনাহুম ইউনফিকুন।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">যারা অদৃশ্যের প্রতি ঈমান আনে, সালাত কায়েম করে এবং আমি তাদেরকে যে রিজিক
+    দিয়েছি তা থেকে ব্যয় করে।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Baqarah [2:4]</h2>
+<h2 id="arabic" class="arabic">
+    وَالَّذِينَ يُؤْمِنُونَ بِمَا أُنْزِلَ إِلَيْكَ وَمَا أُنْزِلَ مِنْ قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ</h2>
+<br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 11</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ওয়াল্লাযীনা ইউমিনুনা বিমা উনযিলা ইলাইকা ওয়ামা উনযিলা মিন
+    কাবলিকা ওয়াবিল আখিরাতি হুম ইউকিনুন।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">এবং যারা ঈমান আনে, যা (পবিত্র কুরআন) তোমার (হে মুহাম্মাদ) প্রতি নাজিল করা
+    হয়েছে এবং যা তোমার পূর্বে নাজিল করা হয়েছে তার উপর (যেমন : তাওরাত, জবুর, ইঞ্জিল)। আর আখিরাতের প্রতি তারা বিশ্বাস
+    রাখে।</h1>
+<br>
+<br>
+
+        <! --- Surah Al-Baqarah --->
+            <div class="heading">
+                <h1 class="heading">Surah Al-Baqarah</h1>
+            </div> <br>
+
+<h2 id="surahReference" class="surahReference">Ayatul Kursi [Surah Baqarah - 2:255]</h2>
+<h2 id="arabic" class="arabic">
+    اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ
+     وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي
+     يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا
+     خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ
+     كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 12 [1]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">আল্লা-হু লা য় ইলা-হা ইল্লা-হুয়াল্ হাইয়্যুল কাইয়্যূ-ম্;
+    লা-তা’খুযুহূসিনাতুওঁ অলা-নাওম্; লাহূ মা-ফিস্ সামা-ওয়া-তি অমা-ফিল্ র্আদ্ব্; মান্ যাল্লাযী ইয়াশ্ফা‘উ ‘ইন্দাহূ য়
+    ইল্লা-বিইয্নিহ্; ইয়া’লামু মা-বাইনা আইদী হিম্ অমা-খাল্ফাহুম্ অলা-ইয়ুহীত্ব ূনা বিশাইয়িম্ মিন্ ‘ইলমিহী য় ইল্লা-বিমা-শা
+    - আ, অসি‘আ র্কুসি ইয়্যু হুস্ সামা-ওয়া-তি অল্র্আদ্বোয়া, অলা-ইয়ায়ূদুহূ হিফ্জুহুমা-, অহুআল্ ‘আলিয়্যুল্ ‘আজীম্।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">আল্লাহ, তিনি ছাড়া কোন (সত্য) ইলাহ নেই, তিনি চিরঞ্জীব, সুপ্রতিষ্ঠিত ধারক।
+    তাঁকে তন্দ্রা ও নিদ্রা স্পর্শ করে না। তাঁর জন্যই আসমানসমূহে যা রয়েছে তা এবং যমীনে যা আছে তা। কে সে, যে তাঁর নিকট
+    সুপারিশ করবে তাঁর অনুমতি ছাড়া? তিনি জানেন যা আছে তাদের সামনে এবং যা আছে তাদের পেছনে। আর তারা তাঁর জ্ঞানের সামান্য
+    পরিমাণও আয়ত্ব করতে পারে না, তবে তিনি যা চান তা ছাড়া। তাঁর কুরসী আসমানসমূহ ও যমীন পরিব্যাপ্ত করে আছে এবং এ দু’টোর
+    সংরক্ষণ তাঁর জন্য বোঝা হয় না। আর তিনি সুউচ্চ, মহান।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Baqarah [2:256]</h2>
+<h2 id="arabic" class="arabic">
+    لَا إِكْرَاهَ فِي الدِّينِ قَدْ تَبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ فَمَنْ يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِنْ بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَى لَا انْفِصَامَ لَهَا وَاللَّهُ سَمِيعٌ عَلِيمٌ
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 12 [2]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">লা য় ইকরা-হা ফিদ্দীনি ক্বাত্ তাবাইয়্যানার রুশ্দু মিনাল্
+    গাইয়্যি, ফামাইঁ ইয়ার্ক্ফু বিত্ত্বোয়াগূতি অইয়ুমিম্ বিল্লা-হি ফাক্বাদিস্ তাম্সাকা বিল্ ‘র্উওয়াতিল্
+    উছ্ক্বা-লান্ফিছোয়া-মা লাহা-; অল্লা-হু সামী‘উন্ ‘আলীম্।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">দীন গ্রহণের ব্যাপারে কোন জবরদস্তি নেই। নিশ্চয় হিদায়াত স্পষ্ট হয়েছে ভ্রষ্টতা
+    থেকে। অতএব, যে ব্যক্তি তাগূতকে অস্বীকার করে এবং আল্লাহর প্রতি ঈমান আনে, অবশ্যই সে মজবুত রশি আঁকড়ে ধরে, যা ছিন্ন হবার
+    নয়। আর আল্লাহ সর্বশ্রোতা, সর্বজ্ঞ।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Baqarah [2:257]</h2>
+<h2 id="arabic" class="arabic">
+    اللَّهُ وَلِيُّ الَّذِينَ آمَنُوا يُخْرِجُهُمْ مِنَ الظُّلُمَاتِ إِلَى النُّورِ وَالَّذِينَ كَفَرُوا أَوْلِيَاؤُهُمُ الطَّاغُوتُ يُخْرِجُونَهُمْ مِنَ النُّورِ
+     إِلَى الظُّلُمَاتِ أُولَئِكَ أَصْحَابُ النَّارِ هُمْ فِيهَا خَالِدُونَ
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 12 [3]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">আল্লা-হু অলিয়্যুল্লাযীনা আ-মানূ ইয়ুখ্রিজ্ব ুহুম্ মিনাজ্
+    জুলুমা-তি ইলান নূর; অল্লাযীনা কাফারূ য় আওলিয়া - উহুমুত্ব ত্বোয়া-গূতু ইয়ুখ্রিজ্ব ূনাহুম্ মিনান্ নূূরি ইলাজ্
+    জুলুমা-ত্; উলা - য়িকা আছ্হা-বুন না-রি, হুম্ ফীহা-খা-লিদূন্।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">যারা ঈমান এনেছে আল্লাহ তাদের বন্ধু, তিনি তাদেরকে অন্ধকার থেকে আলোর দিকে বের
+    করে আনেন। আর যারা কুফরী করে, তাদের অভিভাবক হল তাগূত। তারা তাদেরকে আলো থেকে বের করে অন্ধকারে নিয়ে যায়। তারা আগুনের
+    অধিবাসী, সেখানে তারা স্থায়ী হবে।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Ayatul Kursi [Surah Baqarah - 2:283]</h2>
+<h2 id="arabic" class="arabic">
+    لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ وَإِنْ تُبْدُوا مَا فِي أَنْفُسِكُمْ أَوْ تُخْفُوهُ يُحَاسِبْكُمْ بِهِ اللَّهُ فَيَغْفِرُ لِمَنْ يَشَاءُ وَيُعَذِّبُ مَنْ يَشَاءُ وَاللَّهُ عَلَى كُلِّ شَيْءٍ قَدِير
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 13</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">লিল্লা-হি মা-ফিস্ সামা-ওয়া-তি অমা-ফিল্ আরদ্ব্; অইন্ তুব্দূ
+    মা-ফীয় আন্ফুসিকুম্ আও তুখ্ফূহু ইয়ুহা-সিব্কুম্ বিহিল্লা-হ্; ফাইয়াগ্ফিরু লিমাইঁ ইয়াশা - উ অইয়ু‘আয্যিবু মাইঁ ইয়াশা - উ
+    অল্লা-হু ‘আলা-কুল্লি শাইয়িন্ ক্বার্দী।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">আল্লাহর জন্যই যা রয়েছে আসমানসমূহে এবং যা রয়েছে যমীনে। আর তোমরা যদি প্রকাশ
+    কর যা তোমাদের অন্তরে রয়েছে অথবা গোপন কর, আল্লাহ সে বিষয়ে তোমাদের হিসাব নেবেন। অতঃপর তিনি যাকে চান ক্ষমা করবেন, আর
+    যাকে চান আযাব দেবেন। আর আল্লাহ সবকিছুর উপর ক্ষমতাবান।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Baqarah [2:284]</h2>
+<h2 id="arabic" class="arabic">
+    آمَنَ الرَّسُولُ بِمَا أُنْزِلَ إِلَيْهِ مِنْ رَبِّهِ وَالْمُؤْمِنُونَ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ
+     رُسُلِهِ وَقَالُوا سَمِعْنَا وَأَطَعْنَا غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 14</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">আ-মার্না রাসূলু বিমায় উন্যিলা ইলাইহি র্মি রাব্বিহী অল্
+    মুমিনূন্; কুল্লুন আ-মানা বিল্লা-হি অমালা - য়িকাতিহী অকুতুবিহী অরুসুলিহী, লা-নুর্ফারিক্ব ু বাইনা আহাদিম র্মি রুসুলিহী
+    অক্বা-লূ সামি’না- অআত্বোয়া’না- গুফ্রা-নাকা রব্বানা- অইলাইকাল্ মার্ছী।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">রাসূল তার নিকট তার রবের পক্ষ থেকে নাযিলকৃত বিষয়ের প্রতি ঈমান এনেছে, আর
+    মুমিনগণও। প্রত্যেকে ঈমান এনেছে আল্লাহর উপর, তাঁর ফেরেশতাকুল, কিতাবসমূহ ও তাঁর রাসূলগণের উপর, আমরা তাঁর রাসূলগণের
+    কারও মধ্যে তারতম্য করি না। আর তারা বলে, আমরা শুনলাম এবং মানলাম। হে আমাদের রব! আমরা আপনারই ক্ষমা প্রার্থনা করি, আর
+    আপনার দিকেই প্রত্যাবর্তনস্থল।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Baqarah [2:285]</h2>
+<h2 id="arabic" class="arabic">
+    لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا رَبَّنَا
+     وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا
+     رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 15</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">লা-ইয়ুকাল্লিফুল্লা-হু নাফসান্ ইল্লা-উস্‘আহা-; লাহা-মা-
+    কাসাবাত অ‘আলাইহা- মাক্তাসাবাত; রব্বানা- লা-তুআ-খিয্না য় ইন্নাসী য় না-আও আখ্ত্বোয়ানা-, রব্বানা- অলা-তাহ্মিল্ ‘আলাইনায়
+    ইছরান কামা-হামাল্তাহূ ‘আলাল্লাযীনা মিন্ ক্বাব্লিনা-, রব্বানা- অলা-তুহাম্মিল্না- মা-লা-ত্বোয়া-ক্বাতা লানা-বিহ্;অ’ফু
+    ‘আন্না-অর্গ্ফি লানা- র্অহাম্না- আন্তা মাওলা-না- ফান্ছুরনা- ‘আলাল্ ক্বাওমিল্ কা-ফিরীন্।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">আল্লাহ কোন ব্যক্তিকে তার সামর্থ্যরে বাইরে দায়িত্ব দেন না। সে যা অর্জন করে
+    তা তার জন্যই এবং সে যা কামাই করে তা তার উপরই বর্তাবে। হে আমাদের রব! আমরা যদি ভুলে যাই, অথবা ভুল করি তাহলে আপনি
+    আমাদেরকে পাকড়াও করবেন না। হে আমাদের রব, আমাদের উপর বোঝা চাপিয়ে দেবেন না, যেমন আমাদের পূর্ববর্তীদের উপর চাপিয়ে
+    দিয়েছেন। হে আমাদের রব, আপনি আমাদেরকে এমন কিছু বহন করাবেন না, যার সামর্থ্য আমাদের নেই। আর আপনি আমাদেরকে মার্জনা করুন
+    এবং আমাদেরকে ক্ষমা করুন, আর আমাদের উপর দয়া করুন। আপনি আমাদের অভিভাবক। অতএব আপনি কাফির সম্প্রদায়ের বিরুদ্ধে আমাদেরকে
+    সাহায্য করুন। সংকলন, অনুবাদ ও সম্পাদনা : মাওলানা মিরাজ রহমান</h1>
+<br>
+<br>
+
+        <! --- Surah Al-A'raf --->
+            <div class="heading">
+                <h1 class="heading">Surah Al-A'raf</h1>
+            </div> <br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-A'raf [7:54]</h2>
+<h2 id="arabic" class="arabic">
+    إِنَّ رَبَّكُمُ اللَّهُ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ فِي سِتَّةِ أَيَّامٍ ثُمَّ اسْتَوَى عَلَى الْعَرْشِ يُغْشِي اللَّيْلَ النَّهَارَ يَطْلُبُهُ حَثِيثًا وَالشَّمْسَ
+     وَالْقَمَرَ وَالنُّجُومَ مُسَخَّرَاتٍ بِأَمْرِهِ أَلَا لَهُ الْخَلْقُ وَالْأَمْرُ تَبَارَكَ اللَّهُ رَبُّ الْعَالَمِينَ
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 16</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ইন্না রব্বাকুমুল্লা-হুল্লাযী খালাক্বাস্ সামা-ওয়া-তি অল্
+    আরদ্বোয়া ফী সিত্তাতি আইয়্যা-মিন্ ছুম্মাস্ তাওয়া-‘আলাল্ ‘র্আশি ইয়ুগ্শিল্ লাইলান্ নাহা-রা ইয়াত্বলুবুহূ হাছীছাওঁ
+    অশ্শাম্সা অল্ক্বামারা অন্নুজুমা মুসাখ্খারা-তিম্ বিআম্রিহ্; আলা-লাহুল্ খাল্ক্ব অল্ আর্ম; তাবা-রাকাল্লা-হু রব্বুল্
+    ‘আ-লামীন্।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">নিশ্চয় তোমাদের রব আসমানসমূহ ও যমীন ছয় দিনে সৃষ্টি করেছেন। অতঃপর আরশে
+    উঠেছেন। তিনি রাত দ্বারা দিনকে ঢেকে দেন। প্রত্যেকটি একে অপরকে দ্রুত অনুসরণ করে। আর (সৃষ্টি করেছেন) সূর্য, চাঁদ ও
+    তারকারাজী, যা তাঁর নির্দেশে নিয়োজিত। জেনে রাখ, সৃষ্টি ও নির্দেশ তাঁরই। আল্লাহ মহান, যিনি সকল সৃষ্টির রব।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-A'raf [7:55]</h2>
+<h2 id="arabic" class="arabic">ادْعُوا رَبَّكُمْ تَضَرُّعًا وَخُفْيَةً إِنَّهُ لَا يُحِبُّ الْمُعْتَدِينَ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 17</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">উদ্‘উ রব্বাকুম তাদ্বোর্য়ারু‘আওঁ অখুফ্ইয়াহ্, ইন্নাহূ
+    লা-ইয়ুহিব্বুল্ মু’তাদীন্।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">তোমরা তোমাদের রবকে ডাক অনুনয় বিনয় করে ও চুপিসারে। নিশ্চয় তিনি পছন্দ করেন না
+    সীমালঙ্ঘনকারীদেরকে ।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-A'raf [7:56]</h2>
+<h2 id="arabic" class="arabic">
+    وَلَا تُفْسِدُوا فِي الْأَرْضِ بَعْدَ إِصْلَاحِهَا وَادْعُوهُ خَوْفًا وَطَمَعًا إِنَّ رَحْمَةَ اللَّهِ قَرِيبٌ مِنَ الْمُحْسِنِينَ
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 18</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">অলা- তুফসিদূ ফিল্ আরদ্বি বা’দা ইছ্লা-হিহা- অদ্‘ঊহু খাওফাওঁ
+    অত্বোয়ামা‘আ-; ইন্না রহ্মাতাল্লা-হি ক্বারীবুম্ মিনাল্ মুহ্সিনীন্</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">আর তোমরা যমীনে ফাসাদ করো না তার সংশোধনের পর এবং তাঁকে ডাক ভয় ও আশা নিয়ে।
+    নিশ্চয় আল্লাহর রহমত সৎকর্মশীলদের নিকটবর্তী।</h1>
+<br>
+<br>
+
+        <! --- Surah Bani Israel --->
+            <div class="heading">
+                <h1 class="heading">Surah Bani Israel</h1>
+            </div> <br>
+
+<h2 id="surahReference" class="surahReference">Surah Bani Israel [17:110]</h2>
+<h2 id="arabic" class="arabic">قُلِ ادْعُوا اللَّهَ أَوِ ادْعُوا الرَّحْمَـٰنَ ۖ أَيًّا مَّا تَدْعُوا فَلَهُ
+    الْأَسْمَاءُ الْحُسْنَىٰ ۚ وَلَا تَجْهَرْ بِصَلَاتِكَ وَلَا تُخَافِتْ بِهَا وَابْتَغِ بَيْنَ ذَٰلِكَ سَبِيلًا</h2>
+<br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 19</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">কুলিদ্উল্লাহা আওয়িদ্উর রাহমানু আই ইয়ামামা তাদউ ফালাহুল
+    আসমাউল হুসনা-ওয়ালা-তাজহার বিসালা-তিকা ওয়ালাতুখাফিত বিহা-ওয়াবতাগি বাইনা যালিকা সাবীলা-।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">আল্লাহ বলে আহবান কর কিংবা রহমান বলে, যে নামেই আহবান কর না কেন, সব সুন্দর
+    নাম তাঁরই। আপনি নিজের নামায আদায়কালে স্বর উচ্চগ্রাসে নিয়ে গিয়ে পড়বেন না এবং নিঃশব্দেও পড়বেন না। এতদুভয়ের মধ্যমপন্থা
+    অবলম্বন করুন।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Bani Israel [17:111]</h2>
+<h2 id="arabic" class="arabic">وَقُلِ الْحَمْدُ لِلَّهِ الَّذِي لَمْ يَتَّخِذْ وَلَدًا وَلَمْ يَكُن لَّهُ شَرِيكٌ فِي
+    الْمُلْكِ وَلَمْ يَكُن لَّهُ وَلِيٌّ مِّنَ الذُّلِّ ۖ وَكَبِّرْهُ تَكْبِيرًا</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 20</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ওয়া কুল্লি হামদু লিল্লা-হিল্লাধী লাম ইওাখিয ওয়ালাদান্ ওয়া
+    লাম ইয়াকুল্লাহুশারীকুন ফিল মুলকি ওয়া লাম ইয়াকুল্লাহ্ ওয়ালীয়ূৎম মিনাযযুলিল ওয়া কাবিবিরহু তাকবীরান।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">সমস্ত প্রশংসা আল্লাহর যিনি না কোন সন্তান রাখেন, না তাঁর সার্বভৌমত্বে কোন
+    শরীক আছে এবং যিনি দুর্দশাগ্রস্ত হন না, যে কারণে তাঁর কোন সাহয্যকারীর প্রয়োজন হতে পারে। সুতরাং আপনি স-সম্ভ্রমে তাঁর
+    মাহাত্নø বর্ণনা করতে থাকুন।</h1>
+<br>
+<br>
+
+        <! --- Surah As-Saaffat --->
+            <div class="heading">
+                <h1 class="heading">Surah As-Saaffat</h1>
+            </div> <br>
+
+<h2 id="surahReference" class="surahReference">Surah As-Saaffat [37:1]</h2>
+<h2 id="arabic" class="arabic">وَالصَّافَّاتِ صَفًّا</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 21</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ওয়াসসাফফাতি সাফফান।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">শপথ তাদের যারা সারিবদ্ধ হয়ে দাঁড়ানো,</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah As-Saaffat [37:2]</h2>
+<h2 id="arabic" class="arabic">فَالزَّاجِرَاتِ زَجْرًا</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 22</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ফাঝঝাজিরাতি ঝাজরান।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">অতঃপর ধমকিয়ে ভীতি প্রদর্শনকারীদের,</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah As-Saaffat [37:3]</h2>
+<h2 id="arabic" class="arabic">فَالتَّالِيَاتِ ذِكْرًا</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 23</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ফাওালিয়াতি যিকরান।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">অতঃপর মুখস্থ আবৃত্তিকারীদের-</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah As-Saaffat [37:4]</h2>
+<h2 id="arabic" class="arabic">إِنَّ إِلَـٰهَكُمْ لَوَاحِدٌ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 24</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ইন্না ইলাহাকুম লাওয়াহিদুন।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">নিশ্চয় তোমাদের মাবুদ এক।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah As-Saaffat [37:5]</h2>
+<h2 id="arabic" class="arabic">رَّبُّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا وَرَبُّ الْمَشَارِقِ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 25</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">রাব্বুসসামাওয়াতি ওয়াল আরাদী ওয়ামা বাইনাহুমা ওয়া রাববুল
+    মাশারিকি।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">তিনি আসমান সমূহ, যমীনও এতদুভয়ের মধ্যবর্তী সবকিছুর পালনকর্তা এবং পালনকর্তা
+    উদয়াচলসমূহের।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah As-Saaffat [37:6]</h2>
+<h2 id="arabic" class="arabic">إِنَّا زَيَّنَّا السَّمَاءَ الدُّنْيَا بِزِينَةٍ الْكَوَاكِبِ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 26</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ইন্না যাইয়ান্নাসসামা আদ্দুনইয়া বিযিনাতিনিল কাওয়াকিবি।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">নিশ্চয় আমি নিকটবর্তী আকাশকে তারকারাজির দ্বারা সুশোভিত করেছি।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah As-Saaffat [37:7]</h2>
+<h2 id="arabic" class="arabic">وَحِفْظًا مِّن كُلِّ شَيْطَانٍ مَّارِدٍ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 27</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ওয়াহিফজাম মিন লি শাইহতানিম মারিদি।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">এবং তাকে সংরক্ষিত করেছি প্রত্যেক অবাধ্য শয়তান থেকে।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah As-Saaffat [37:8]</h2>
+<h2 id="arabic" class="arabic">لَّا يَسَّمَّعُونَ إِلَى الْمَلَإِ الْأَعْلَىٰ وَيُقْذَفُونَ مِن كُلِّ جَانِبٍ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 28</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">লা ইয়াসসান্মাউনা ইলাল মালায়িল আলা, ইয়ুকযাফুনা মিন কুল্লি
+    জানিবিন।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">ওরা উর্ধ্ব জগতের কোন কিছু শ্রবণ করতে পারে না এবং চার দিক থেকে তাদের প্রতি
+    উল্কা নিক্ষেপ করা হয়।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah As-Saaffat [37:9]</h2>
+<h2 id="arabic" class="arabic">دُحُورًا ۖ وَلَهُمْ عَذَابٌ وَاصِبٌ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 29</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">দুহূরাওঁ ওয়ালাহুম 'আযাবুন ওয়াসিবিন।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">ওদেরকে বিতাড়নের উদ্দেশে। ওদের জন্যে রয়েছে বিরামহীন শাস্তি।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah As-Saaffat [37:10]</h2>
+<h2 id="arabic" class="arabic">إِلَّا مَنْ خَطِفَ الْخَطْفَةَ فَأَتْبَعَهُ شِهَابٌ ثَاقِبٌ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 30</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ইল্লা মান খাতিফাল খাতিফাতা ফাআতবা'হু শিহাবুন সাকিবুন।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">তবে কেউ ছোঁ মেরে কিছু শুনে ফেললে জ্বলন্ত উল্কাপিন্ড তার পশ্চাদ্ধাবন করে।
+</h1>
+<br>
+<br>
+
+        <! --- Surah Ar-Rahman --->
+            <div class="heading">
+                <h1 class="heading">Surah Ar-Rahman</h1>
+            </div> <br>
+
+<h2 id="surahReference" class="surahReference">Surah Ar-Rahman [55:33]</h2>
+<h2 id="arabic" class="arabic">
+    يَا مَعْشَرَ الْجِنِّ وَالْإِنْسِ إِنِ اسْتَطَعْتُمْ أَنْ تَنْفُذُوا مِنْ أَقْطَارِ السَّمَاوَاتِ وَالْأَرْضِ فَانْفُذُوا لَا تَنْفُذُونَ إِلَّا بِسُلْطَانٍ
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 31 [1]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ইয়া মা’শারল্ জ্বিন্নি অল্ ইন্সি ইনিস্ তাত্বোয়া’তুম্ আন্
+    তান্ফুযূ মিন্ আক্ব ত্বোয়া-রিস্ সামা-ওয়া-তি অল্র্আদ্বি ফান্ফুযূ; লা-তান্ফুযূনা ইল্লা-বিসুল্ত্বোয়া-ন্।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">হে জিন ও মানবজাতি, যদি তোমরা আসমানসমূহ ও যমীনের সীমানা থেকে বের হতে পার,
+    তাহলে বের হও। কিন্তু তোমরা তো (আল্লাহর দেয়া) শক্তি ছাড়া বের হতে পারবে না।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Ar-Rahman [55:34]</h2>
+<h2 id="arabic" class="arabic">فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 31 [2]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ফাবিআইয়্যি আ-লা-য়ি রব্বিকুমা-তুকায্যিবা-ন্</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">সুতরাং তোমাদের রবের কোন নিআমতকে তোমরা উভয়ে অস্বীকার করবে?</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Ar-Rahman [55:35]</h2>
+<h2 id="arabic" class="arabic">يُرْسَلُ عَلَيْكُمَا شُوَاظٌ مِنْ نَارٍ وَنُحَاسٌ فَلَا تَنْتَصِرَانِ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 31 [3]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ইর্য়ুসালু ‘আলাইকুমা-শুওয়া-জুম্ মিন্ না-রিঁও অনুহা-সুন্
+    ফালা-তান্তাছির-ন্।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">তোমাদের উভয়ের প্রতি প্রেরণ করা হবে অগিড়বশিখা ও কালো ধোঁয়া, তখন তোমরা
+    প্রতিরোধ করতে পারবে না।</h1>
+<br>
+<br>
+
+        <! --- Surah Al-Hashr --->
+            <div class="heading">
+                <h1 class="heading">Surah Al-Hashr</h1>
+            </div> <br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Hashr [59:21]</h2>
+<h2 id="arabic" class="arabic">
+    لَوْ أَنْزَلْنَا هَذَا الْقُرْآنَ عَلَى جَبَلٍ لَرَأَيْتَهُ خَاشِعًا مُتَصَدِّعًا مِنْ خَشْيَةِ اللَّهِ وَتِلْكَ الْأَمْثَالُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 32 [1]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">লাও আন্যালনা- হা-যাল্ কুরআ-না ‘আলা- জ্বাবালিল্ লারয়াইতাহূ
+    খ-শি‘আম্ মুতাছোয়াদ্দি‘আম্ মিন্ খশ্ইয়াতি ল্লা-হ্; অতিল্কাল্ আম্ছা-লু নাদ্ব্রিবুহা-লিন্না-সি লা‘আল্লাহুম্
+    ইয়াতাফাক্কারূন্।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">এ কুরআনকে যদি আমি পাহাড়ের ওপর নাযিল করতাম তবে তুমি অবশ্যই তাকে দেখতে,
+    আল্লাহর ভয়ে বিনীত ও বিদীর্ণ। মানুষের জন্য আমি এ উদাহরণগুলি পেশ করি; হয়ত তারা চিন্তাভাবনা করবে।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Hashr [59:22]</h2>
+<h2 id="arabic" class="arabic">
+    هُوَ اللَّهُ الَّذِي لَا إِلَهَ إِلَّا هُوَ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ هُوَ الرَّحْمَنُ الرَّحِيمُ</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 32 [2]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">হুওয়াল্লা-হু ল্লাযী লা য় ইলা-হা ইল্লা হুওয়া ‘আ-লিমুল্ গইবি
+    অশ্শাহা-দাতি হুওর্য়া রহ্মা-র্নু রহীম্ ।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">তিনিই আল্লাহ, যিনি ছাড়া কোন ইলাহ নেই; দৃশ্য- অদৃশ্যের জ্ঞাতা; তিনিই পরম
+    করুণাময়, দয়ালু।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Hashr [59:23]</h2>
+<h2 id="arabic" class="arabic">
+    هُوَ اللَّهُ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 32 [2]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">হুওয়াল্লা-হুল্ লাযী লা য় ইলা-হা ইল্লা-হুওয়া আল্ মালিকুল্
+    কুদ্দূসুস্ সালা-মুল্ মুমিনুল্ মুহাইমিনুল্ ‘আযীযুল্ জ্বাব্বা-রুল্ মুতাকার্ব্বি; সুবহা-নাল্লা-হি ‘আম্মা- ইয়ুশ্রিকূন্।
+</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">তিনিই আল্লাহ; যিনি ছাড়া কোন ইলাহ নেই, তিনিই বাদশাহ, মহাপবিত্র, ত্রুটিমুক্ত,
+    নিরাপত্তাদানকারী, রক্ষক, মহাপরাক্রমশালী, মহাপ্রতাপশালী, অতীব মহিমান্বিত, তারা যা শরীক করে তা হতে পবিত্র মহান।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Hashr [59:24]</h2>
+<h2 id="arabic" class="arabic">
+    هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ لَهُ الْأَسْمَاءُ الْحُسْنَى يُسَبِّحُ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ وَهُوَ الْعَزِيزُ الْحَكِيمُ
+</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 32 [4]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">হুওয়া ল্লা-হুল্ খ-লিকুল্ বা-রিয়ুল্ মুছোয়াওয়্যিরু লাহুল্
+    আস্মা-য়ুল হুস্না-; ইয়ুসাব্বিহু লাহূ মা-ফিস্ সামা-ওয়া-তি অল্ র্আদ্বি অহুওয়াল্ ‘আযীযুল্ হাকীম্।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">তিনিই আল্লাহ, স্রষ্টা, উদ্ভাবনকর্তা, আকৃতিদানকারী; তাঁর রয়েছে সুন্দর
+    নামসমূহ; আসমান ও যমীনে যা আছে সবই তার মহিমা ঘোষণা করে। তিনি মহাপরাক্রমশারী, প্রজ্ঞাময়। গ্রন্থনা : মাওলানা মিরাজ
+    রহমান</h1>
+<br>
+<br>
+
+        <! --- Surah Al-Jinn --->
+            <div class="heading">
+                <h1 class="heading">Surah Al-Jinn</h1>
+            </div> <br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Jinn [72.1]</h2>
+<h2 id="arabic" class="arabic">
+    قُلْ أُوحِيَ إِلَيَّ أَنَّهُ اسْتَمَعَ نَفَرٌ مِنَ الْجِنِّ فَقَالُوا إِنَّا سَمِعْنَا قُرْآنًا عَجَبًا</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 33 [1]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">কুল্ ঊহিয়া ইলাইয়্যা আন্নাহুস্ তামা‘আ নাফারুম্ মিনাল্ জিন্নি
+    ফাক্ব-লূ য় ইন্না-সামি’না- কুর আ-নান্ ‘আজ্বাবাঁ-।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">বল, ‘আমার প্রতি ওহী করা হয়েছে যে, নিশ্চয় জিনদের একটি দল মনোযোগ সহকারে
+    শুনেছে। অতঃপর বলেছে, ‘আমরা তো এক বিস্ময়কর কুরআন শুনেছি,</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Jinn [72.2]</h2>
+<h2 id="arabic" class="arabic">يَهْدِي إِلَى الرُّشْدِ فَآمَنَّا بِهِ وَلَنْ نُشْرِكَ بِرَبِّنَا أَحَدًا</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 33 [2]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">ইয়াহ্দী য় ইর্লা রুশ্দি ফাআ-মান্না-বিহ্; অলান্ নুশ্রিকা
+    বিরব্বিনা য় আহাদাঁও।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">যা সত্যের দিকে হিদায়াত করে; অতঃপর আমরা তাতে ঈমান এনেছি। আর আমরা কখনো আমাদের
+    রবের সাথে কাউকে শরীক করব না’।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Jinn [72.3]</h2>
+<h2 id="arabic" class="arabic">وَأَنَّهُ تَعَالَى جَدُّ رَبِّنَا مَا اتَّخَذَ صَاحِبَةً وَلَا وَلَدًا</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 33 [3]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">অআন্নাহূ তা‘আ-লা-জ্বাদ্দু রব্বিনা-মাত্তাখাযা ছোয়া- হিবাতাঁও
+    অলা-অলাদাঁ-।</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">‘আর নিশ্চয় আমাদের রবের মর্যাদা সমুচ্চ। তিনি কোন সংঙ্গীনী গ্রহণ করেননি এবং
+    না কোন সন্তান’।</h1>
+<br>
+<br>
+
+<h2 id="surahReference" class="surahReference">Surah Al-Jinn [72.4]</h2>
+<h2 id="arabic" class="arabic">وَأَنَّهُ كَانَ يَقُولُ سَفِيهُنَا عَلَى اللَّهِ شَطَطًا</h2> <br>
+<h3 id="ayat_number" class="ayat_number">Ayat: 33 [4]</h3>
+<h1 id="banglaPronounciation" class="banglaPronounciation">অআন্নাহূ কা-না ইয়াকুলু সাফীহুনা-‘আলাল্লা-হি শাত্বোয়াত্বোয়াঁও।
+</h1>
+<h1 id="banglaMeaning" class="banglaMeaning">আর আমাদের মধ্যকার নির্বোধেরা আল্লাহর ব্যাপারে অবাস্তব কথা- বার্তা বলত’।
+</h1>
+<br>
+<br>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
