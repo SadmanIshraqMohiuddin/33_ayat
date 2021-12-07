@@ -6,6 +6,7 @@ body {
   margin: 0;
   margin-top: 10px;
   background-color: rgb(39, 50, 56);
+  transition: background 1.5s;
 }
 
 .center {
@@ -14,10 +15,12 @@ body {
   margin-right: auto;
   width: 300px;
   height: auto;
+  transition: background 1.5s;
 }
 
 .heading {
   text-align: center;
+  transition: background 1.5s;
 }
 
 h3,
@@ -28,6 +31,7 @@ h3,
   padding: 0px 5px;
   margin-top: 3px;
   margin-bottom: 7px;
+  transition: background 1.5s;
 }
 
 .heading h1 {
@@ -37,6 +41,7 @@ h3,
   font-style: oblique;
   font-size: 30px;
   border-radius: 200px;
+  transition: background 1.5s;
 }
 
 p {
@@ -46,6 +51,7 @@ p {
   margin: 10px 0px;
   padding: 1px 15px;
   font-size: 30px;
+  transition: background 1.5s;
 }
 
 #arabic {
@@ -62,6 +68,7 @@ p {
   text-align: center;
   word-wrap: break-word;
   max-width: 100%;
+  transition: background 1.5s;
 }
 
 #banglaPronounciation {
@@ -74,6 +81,7 @@ p {
   margin: 0;
   border: 0;
   text-align: justify;
+  transition: background 1.5s;
 }
 
 h1,
@@ -86,6 +94,7 @@ h1,
   padding: 5px 5px;
   margin: 0;
   text-align: justify;
+  transition: background 1.5s;
 }
 
 #surahReference {
@@ -102,6 +111,7 @@ h1,
   padding-top: 0px;
   border: 0;
   text-align: center;
+  transition: background 1.5s;
 }
 
 .to-top {
@@ -120,17 +130,14 @@ h1,
   text-decoration: none;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .to-top.active {
   bottom: 30px;
   pointer-events: auto;
   opacity: 1;
-}
-
-.hidden {
-  display: none;
+  transition: background 1.5s;
 }
 
 input[type="checkbox"] {
@@ -146,6 +153,7 @@ label {
   color: rgb(167, 218, 27);
   font-family: Consolas, Baskerville, "Segoe UI", sans-serif;
   font-size: 25px;
+  transition: background 1.5s;
 }
 
 input[type="checkbox"]:hover {
@@ -164,6 +172,7 @@ input[type="checkbox"]:hover {
   background-color: yellow;
   font-weight: bold;
   font-size: 20px;
+  transition: background 1.5s;
 }
 
 #lightBox_Off {
@@ -180,4 +189,11 @@ input[type="checkbox"]:hover {
   font-weight: bold;
   font-size: 20px;
   border: white;
+  transition: background 1.5s;
+}
+
+.random {
+  color: red;
+  background-color: red;
+  font-size: 100px;
 }

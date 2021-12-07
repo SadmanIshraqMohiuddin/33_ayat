@@ -87,10 +87,9 @@ function turnLightsOn() {
     e.style.backgroundColor = "#F3e5dc"; 
    }
 
-   document.body.style.backgroundColor = "#F3e5dc";
+  document.body.style.backgroundColor = "rgba(243, 229, 220, 1)"
 
-
-} 
+}
 
 
 function turnLightsOff()
